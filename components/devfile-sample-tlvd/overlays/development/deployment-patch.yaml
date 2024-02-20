@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tlvd
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0037-tenant/tkrw-pr714-0075-0037-app/devfile-sample-tlvd@sha256:0a73a17be1c832a5cf7d12c149fa63594e6072366547320281ccbbe79c0c3949
+        name: my-nodejs
+        resources: {}
+status: {}
